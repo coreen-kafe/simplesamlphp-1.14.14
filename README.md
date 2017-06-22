@@ -14,4 +14,4 @@ Addon for KAFE
 This is fixed or added-on for Korean Access Federation
 
 * bug-fix for single logout
-* read AttributeAuthority
+* read registration authority
