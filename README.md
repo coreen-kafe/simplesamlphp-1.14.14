@@ -8,3 +8,10 @@ This is the official repository of the SimpleSAMLphp software.
 
 * [SimpleSAMLphp homepage](https://simplesamlphp.org)
 * [SimpleSAMLphp Downloads](https://simplesamlphp.org/download)
+
+Addon for KAFE
+==============
+This is fixed or added-on for Korean Access Federation
+
+* bug-fix for single logout
+* read AttributeAuthority
