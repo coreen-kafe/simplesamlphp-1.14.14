@@ -15,3 +15,4 @@ This is fixed or added-on for Korean Access Federation
 
 * bug-fix for single logout
 * read registration authority
+* GUI for KAFE members

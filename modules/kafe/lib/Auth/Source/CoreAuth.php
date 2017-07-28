@@ -12,15 +12,15 @@ class sspmod_kafe_Auth_Source_CoreAuth extends sspmod_core_Auth_UserPassBase {
 	private $password;
 
 	private $idp_host = '/simplesaml/';
-	private $user_table = 'cosso_users';
-	private $blk_table  = 'cosso_blacklist_log';
-	private $logged_table = 'cosso_login_users';
+	private $user_table = 'your_user_table';
+	private $blk_table  = 'your_blacklist_log';
+	private $logged_table = 'your_logged_table';
 
 	private $logon_try = '5'; // 5회만 로그인 허용
 	private $block_min = '60'; // 60분 동안 차단
 
 	 // 대칭키 salt
-	 private $aes_key_string = 'ssoaes#9@0';
+	 private $aes_key_string = 'yourAESKeyHeRE';
 
     public function __construct($info, $config) {
         parent::__construct($info, $config);
@@ -43,7 +43,7 @@ class sspmod_kafe_Auth_Source_CoreAuth extends sspmod_core_Auth_UserPassBase {
 	// 비밀번호 암호화
 	private function _generateHash($plainText, $salt = null)
 	{
-		$salt = "kreonet core 2013";  
+		$salt = "Your SoLt KeY Here";  
 
 		if ($salt === null)
 		{
