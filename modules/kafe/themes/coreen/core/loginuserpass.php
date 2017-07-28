@@ -36,7 +36,7 @@
 
 				<div class="box-blue">
 					<h2>Please note</h2>
-					<p class="content">Before entering your username and password, <br />verify that the URL for this page begins with: <a href="https://coreen-idp.kreonet.net" target="_blank">https://coreen-idp.kreonet.net</a></p>
+					<p class="content">Before entering your username and password, <br />verify that the URL for this page begins with: <a href="https://www.your.org" target="_blank">https://www.your.org</a></p>
 				</div>
 
 				<?php if ($this->data['errorcode'] !== NULL) { ?>
