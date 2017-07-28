@@ -16,7 +16,7 @@
 					}
 					?>
 					<p class="img">
-						<img src="/<?php echo $this->data['baseurlpath']; ?>resources/coreen/images/kreonet_logo.gif" alt="kreonet" />
+						<img src="/<?php echo $this->data['baseurlpath']; ?>resources/coreen/images/kreonet_logo.gif" alt="organization" />
 					</p>
 					<ul>
 						<li>
