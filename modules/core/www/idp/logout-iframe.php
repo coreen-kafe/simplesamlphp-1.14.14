@@ -98,6 +98,7 @@ if ($type === 'nojs') {
 	$t = new SimpleSAML_XHTML_Template($globalConfig, 'core:logout-iframe-wrapper.php');
 	$t->data['id'] = $id;
 	$t->data['SPs'] = $state['core:Logout-IFrame:Associations'];
+	$t->data['jquery'] = array('core' => TRUE, 'ui' => FALSE, 'css' => FALSE);
 	$t->show();
 	exit(0);
 }
