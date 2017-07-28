@@ -43,8 +43,10 @@
 				<p class="icon-wrong">
 					<?php 
 					if ($this->data['errorcode'] == 'WRONGUSERPASS') {
-						echo 'Either no user with the given username could be found, or the password you gave was wrong. <br />
-					Your IP will be blocked after 5 login failures ('.(5-@$_SESSION['try_times']).' times left). <br />Please check your username/password and try again. ';
+						echo 'Either no username is found, or the password you gave was wrong. <br />
+                                                      Note that your IP address is recorded for security purposes. <br />
+                                                      Please check your username/password and try again. ';
+
 					} else {
 						echo htmlspecialchars($this->t('{errors:descr_' . $this->data['errorcode'] . '}', $this->data['errorparams'])); 
 					}
@@ -53,8 +55,7 @@
 				<?php } ?>
 
 				<p class="newuser">
-					New user? or forgot your password?
-					<span>Go to <a href="https://coreen-idp.kreonet.net" target="_blank">KAFE IMS</a></span>
+					Trouble in login? or forgot your password? <span>Contact your IT Administration staffs</span>
 				</p>
 			</div>
 		</div>
