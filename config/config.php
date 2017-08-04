@@ -531,6 +531,8 @@ $config = array(
             'type'          => 'saml20-idp-SSO',
         ),
 
+	/* Add a entitycategoires below */
+
         /* When called without parameters, it will fallback to filter attributes ‹the old way›
          * by checking the 'attributes' parameter in metadata on IdP hosted and SP remote.
          */
