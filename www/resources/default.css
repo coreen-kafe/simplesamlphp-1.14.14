@@ -369,12 +369,12 @@ caption {
 	float: left;
 }
 
-#mobilesubmit, #mobile_remember_username, #mobile_remember_me {
+#mobile_remember_username, #mobile_remember_me {
 	display: none;
 }
 
 @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-	#header, #languagebar, #footer, .erroricon, #loginicon, .logintext, #regularsubmit,
+	#header, #languagebar, #footer, .erroricon, loginicon, .logintext, 
 	#regular_remember_username, #regular_remember_me {
 		display: none;
 	}
