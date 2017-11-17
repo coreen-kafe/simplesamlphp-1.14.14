@@ -249,14 +249,26 @@ abstract class sspmod_core_Auth_UserPassBase extends SimpleSAML_Auth_Source {
 		 */
 
 		/* Attempt to log in. */
-		try {
+		/*try {
 			$attributes = $source->login($username, $password);
 		} catch (Exception $e) {
 			SimpleSAML_Logger::stats('Unsuccessful login attempt from '.$_SERVER['REMOTE_ADDR'].'.');
 			throw $e;
 		}
 
-		SimpleSAML_Logger::stats('User \''.$username.'\' has been successfully authenticated.');
+		SimpleSAML_Logger::stats('User \''.$username.'\' has been successfully authenticated.');*/
+
+                $encAddr = base64_encode(SimpleSAML\Utils\Crypto::aesEncrypt($_SERVER['REMOTE_ADDR']));
+		$encUser = base64_encode(SimpleSAML\Utils\Crypto::aesEncrypt($username));
+                try {
+                        $attributes = $source->login($username, $password);
+                } catch (Exception $e) {
+                        SimpleSAML_Logger::stats('Unsuccessful login attempt from \''.$encAddr.'\'.');
+                        throw $e;
+                }
+
+                SimpleSAML_Logger::stats('User \''.$encUser.'\' has been successfully authenticated from \''.$encAddr.'\'.');
+
 
 		/* Save the attributes we received from the login-function in the $state-array. */
 		assert('is_array($attributes)');

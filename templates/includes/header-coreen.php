@@ -40,6 +40,7 @@ if (array_key_exists('pageid', $this->data)) {
 header('X-Frame-Options: SAMEORIGIN');
 
 // SP 이름 얻어
+$spName = array();
 if (isset($this->data['SPMetadata'])) {
 	if (array_key_exists('name', $this->data['SPMetadata'])) {
 		$spName = $this->data['SPMetadata']['name'];
