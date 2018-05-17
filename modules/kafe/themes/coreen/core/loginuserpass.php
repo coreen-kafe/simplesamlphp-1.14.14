@@ -56,7 +56,7 @@
 				<?php } ?>
 
 				<p class="newuser">
-					Trouble in login? or forgot your password? <span>Contact your IT Administration staffs</span>
+					Trouble in login? or forgot your password? <span>Contact your <a href="mailto:MAIN_ADMIN">IT Administration staffs</a></span>
 				</p>
 			</div>
 		</div>
