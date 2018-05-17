@@ -13,10 +13,10 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
 			Korean Access FEderation
 		</p>
 
-		<ul id="fnb">
+		<!-- <ul id="fnb">
 			<li><a href="https://coreen.kreonet.net/privacy_policy" target="_blank">PRIVACY POLICY</a></li>
 			<li><a href="https://coreen.kreonet.net/user_agreement" target="_blank">TERMS OF USE</a></li>
-		</ul>
+		</ul> -->
 	</div>
 </div>
 <!-- //layout-footer -->
