@@ -36,7 +36,7 @@
 
 				<div class="box-blue">
 					<h2>Please note</h2>
-					<p class="content">By accessing or using  this service, you represent that you have read, understood, and agree to be bound by this User Agreement including any future modifications.</p>
+					<p class="content">By accessing or using  this service, you represent that you have read, understood, and agree to be bound by this <a href="https://www.your.org/simplesaml/aup.php" target="_blank">User Agreement</a> including any future modifications.</p>
 					<p class="content">Before entering your username and password, <br />verify that the URL for this page begins with: <a href="https://www.your.org" target="_blank">https://www.your.org</a></p>
 				</div>
 
