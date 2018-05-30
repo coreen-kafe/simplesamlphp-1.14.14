@@ -48,7 +48,11 @@
                                                       Note that your IP address is recorded for security purposes. <br />
                                                       Please check your username/password and try again. ';
 
-					} else {
+					} else if($this->data['errorcode'] == 'NOPRIVILEGE') {
+                                                echo 'No use right is granted. <br />
+                                                      The service is available only for student, faculty, and staff enrolled in the organization. <br />
+                                                      Please contact your IT administration department. ';
+                                        } else {
 						echo htmlspecialchars($this->t('{errors:descr_' . $this->data['errorcode'] . '}', $this->data['errorparams'])); 
 					}
 					?>
